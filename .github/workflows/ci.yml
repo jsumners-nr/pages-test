@@ -3,6 +3,9 @@ name: CI
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy-site:
     runs-on: ubuntu-latest
