@@ -9,7 +9,8 @@ git branch -fd gh-pages
 git checkout -b gh-pages
 mkdir docs
 cd docs
-echo "<h1>hello! ${date -R}</h1>" > index.html
+d=$(date -R)
+echo "<h1>hello! ${d}</h1>" > index.html
 cd ..
 git add .
 git commit -m 'docs: update docs site'
