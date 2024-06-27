@@ -3,6 +3,8 @@
 set -ex
 
 git fetch origin gh-pages
+git checkout gh-pages
+git checkout main
 git branch -fd gh-pages
 git checkout -b gh-pages
 mkdir docs
