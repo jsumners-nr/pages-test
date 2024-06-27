@@ -2,6 +2,7 @@
 
 set -ex
 
+git fetch origin gh-pages
 git branch -fd gh-pages
 git checkout -b gh-pages
 mkdir docs
